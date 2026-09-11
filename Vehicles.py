@@ -31,6 +31,11 @@ class Vehicle:
     def set_year(self, year):
         self.__year = year
 
+    def lights(high,low,self)
+        return 
+
+ 
+
 
     def __str__(self):
         return f"{self.__brand} {self.__model} ({self.__year}) - {self.__num_wheels} wheels"
