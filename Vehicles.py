@@ -31,8 +31,10 @@ class Vehicle:
     def set_year(self, year):
         self.__year = year
 
-    def lights(high,low,self)
-        return 
+    def lights(self, high, low):
+        self.__high_beam = high
+        self.__low_beam = low
+    return f"High beam: {self.__high_beam}, Low beam: {self.__low_beam}"
 
  
 
@@ -49,3 +51,4 @@ print(v2.get_brand())
 v2.set_brand("Bugatti")
 v2.set_model("Divo")
 print(v2.get_brand(), v2.get_model())
+print(v3.lights("ON", "OFF"))
