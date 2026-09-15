@@ -16,6 +16,9 @@ class Exam:
          else:
             raise Exception("Name must be a string!") 
 
+    def is_eligible(self):
+    return self.standard >= 11
+
     @staticmethod
     def get_exam_name():
         return Exam.__Exam_name
@@ -33,6 +36,8 @@ print(student.get_name())
 
 student.set_change_name("Rahul")
 print(student.get_name())
+
+print(student.is_eligible())
 
 
 
