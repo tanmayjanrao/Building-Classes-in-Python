@@ -16,6 +16,13 @@ class Exam:
         else:
             raise Exception("Name must be a string!")
 
+    def set_standard(self, new_standard):
+        if type(new_standard) == int:
+            self.standard = new_standard
+            print(f"Standard updated to {new_standard}")
+        else:
+            raise Exception("Standard must be an integer!")
+
     def is_eligible(self):
         return self.standard >= 11
 
@@ -28,6 +35,7 @@ class Exam:
 
 
 student = Exam("Tanmay", 67, 10)
+
 print(student)
 
 print(Exam.get_exam_name())
@@ -36,5 +44,8 @@ print(student.get_name())
 
 student.set_change_name("Rahul")
 print(student.get_name())
+
+student.set_standard(12)
+print(student)
 
 print(student.is_eligible())
