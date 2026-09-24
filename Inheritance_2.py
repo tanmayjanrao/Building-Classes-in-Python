@@ -4,7 +4,6 @@ class School:
         self.school_name = school_name
         print("Parent constructor")
 
-
     def show(self):
         return self.school_name
 
@@ -24,9 +23,13 @@ class Student(School):
     def intro(self):
         return f"My name is {self.name}."
 
+    def parent_show(self):
+        return super().show()
+
 
 obj = Student("SRV", "Tanmay")
 
 print(obj)
 print(obj.show())
 print(obj.intro())
+print(obj.parent_show())
