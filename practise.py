@@ -10,11 +10,19 @@ class Greet:
         else:
             print(f"Hello {self.name}")
 
+    def weekend(self, day):
+        if day == "Saturday" or day == "Sunday":
+            print("Happy weekend")
+        else:
+            pass 
+
+
 def multiply(a,b):
     return (a*b)
 
 a = Greet("tanmay", "india")
 a.greeting()
+a.weekend("Sunday")
 
 
 # with print we only get the result but with return being used the returned value can be used again
