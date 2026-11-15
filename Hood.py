@@ -29,5 +29,24 @@ class Hood():
         else:
             print("Bro can't even follow instructions")
 
+    def day_2(self):
+        user = input("""
+You finally made it home. Your mom asks where the milk is.
+
+1. Tell her the truth
+2. Say you got robbed
+3. Say the milk was expired
+        """)
+
+        if user == "1":
+            print("At least bro is honest.")
+        elif user == "2":
+            print("Your mom asks WHERE THE HELL IS YOUR WALLET?")
+        elif user == "3":
+            print("Bro thought he could outsmart his mom ")
+        else:
+            print("Learn to read lil bro.")
+
 
 person=Hood("TJ")
+self.day_2()
