@@ -78,6 +78,41 @@ class Square:
 
     def Diagonal_from_Area(self):
         return f"The Diagonal from the Area is {sqrt(2 * self.area)}"
+
+
+
+class Rectangle:
+
+    def __init__(self, length, width):
+        self.length = length
+        self.width = width
+        self.area = length * width
+        self.perimeter = 2 * (length + width)
+        self.diagonal = sqrt(length**2 + width**2)
+
+    def Area_of_rectangle(self):
+        return f"The Area of Rectangle is {self.area}"
+
+    def Perimeter_of_rectangle(self):
+        return f"The Perimeter of Rectangle is {self.perimeter}"
+
+    def Diagonal_of_rectangle(self):
+        return f"The Diagonal of Rectangle is {self.diagonal}"
+
+    def Length_from_area(self):
+        return f"The Length from Area is {self.area / self.width}"
+
+    def Width_from_area(self):
+        return f"The Width from Area is {self.area / self.length}"
+
+    def Length_from_perimeter(self):
+        return f"The Length from Perimeter is {(self.perimeter / 2) - self.width}"
+
+    def Width_from_perimeter(self):
+        return f"The Width from Perimeter is {(self.perimeter / 2) - self.length}"
+
+    def Area_from_diagonal(self):
+        return f"The Area from Diagonal is {sqrt(self.diagonal**2 - self.length**2) * self.length}"
     
 
 
